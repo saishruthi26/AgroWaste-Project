@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Farmer Profile</title>
+
+<style>
+body{
+font-family:Arial;
+background:#e8f5e9;
+}
+
+.container{
+width:420px;
+margin:80px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+h2{
+text-align:center;
+color:#2e7d32;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid gray;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#4CAF50;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Farmer Profile</h2>
+
+<form action="farmer.jsp" method="post">
+
+<input type="text" name="name" placeholder="Farmer Name">
+
+<input type="text" name="village" placeholder="Village">
+
+<input type="text" name="land" placeholder="Land Area (Acres)">
+
+<input type="text" name="crop" placeholder="Main Crop">
+
+<textarea name="address" placeholder="Address"></textarea>
+
+<button type="submit">Save Profile</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

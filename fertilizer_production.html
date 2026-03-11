@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fertilizer Production</title>
+
+<style>
+
+body{
+background:#e0f2f1;
+font-family:Arial;
+}
+
+.box{
+width:420px;
+margin:90px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+h2{
+text-align:center;
+color:#00695c;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid gray;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#00796b;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Fertilizer Production</h2>
+
+<form action="fertilizer.jsp" method="post">
+
+<input type="text" name="waste_id" placeholder="Waste ID">
+
+<select name="method">
+<option>Composting</option>
+<option>Vermicomposting</option>
+<option>Bio Fertilizer</option>
+</select>
+
+<input type="number" name="fertilizer_qty" placeholder="Fertilizer Quantity">
+
+<button type="submit">Produce</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Waste Collection</title>
+
+<style>
+
+body{
+background:#f1f8e9;
+font-family:Arial;
+}
+
+.formbox{
+width:450px;
+margin:100px auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+h2{
+text-align:center;
+color:#33691e;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid gray;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#558b2f;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="formbox">
+
+<h2>Waste Collection Request</h2>
+
+<form action="collection.jsp" method="post">
+
+<input type="text" name="farmer" placeholder="Farmer Name">
+
+<select name="waste_type">
+<option>Crop Waste</option>
+<option>Vegetable Waste</option>
+<option>Animal Waste</option>
+</select>
+
+<input type="number" name="quantity" placeholder="Quantity (kg)">
+
+<input type="date" name="pickup">
+
+<button type="submit">Request Pickup</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
